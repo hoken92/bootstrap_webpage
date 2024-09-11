@@ -69,34 +69,118 @@
       </div>
     </nav>
 
-    <div id="contact-container">
+    <!-- Contact Container -->
+    <div
+      id="contact-container"
+      class="m-3 d-flex flex-row justify-content-flex-start"
+    >
       <!-- Profile img and name -->
-      <section id="profile">
+      <section id="profile" class="d-flex flex-column align-items-center m-3">
         <img
           src="https://cdn-icons-png.flaticon.com/512/8847/8847419.png"
-          class="img-thumbnail"
+          class="img-thumbnail m-2"
           alt="profile-img"
+          width="150px"
         />
-        <p>Tommy Test</p>
+        <p class="m-2">Tommy Test</p>
       </section>
 
       <!-- Contact info and edit button -->
-      <section>
+      <section class="d-flex flex-column align-items-end m-3 gap-3">
+        <h3 class="p-1">Contact Information</h3>
         <label for="email"
           >Email Address:
-          <input type="email" id="email" placeholder="test@example.com" />
+          <input
+            type="email"
+            id="email"
+            placeholder="test@example.com"
+            disabled
+          />
         </label>
         <label for="phone-number"
           >Phone Number:
-          <input type="number" id="phone-number" placeholder="(303) 555-5555" />
+          <input
+            type="number"
+            id="phone-number"
+            placeholder="(303) 555-5555"
+            disabled
+          />
         </label>
-        <label for="cc">
-          <input id="cc" type="number" placeholder="**** 4242" />
+        <label for="cc"
+          >Payment Method:
+          <input id="cc" type="number" placeholder="**** 4242" disabled />
         </label>
         <button type="button" class="btn btn-dark">Edit</button>
       </section>
     </div>
 
-    <div id="last-viewed-container"></div>
+    <!-- Listing Container -->
+    <div class="m-4">
+      <h3>Last 5 Viewed:</h3>
+      <!-- Listing one -->
+      <a
+        href="#"
+        class="list-group-item list-group-item-action list-group-item-success"
+      >
+        <div class="d-flex w-100 justify-content-between">
+          <h5 class="mb-1">Restaurant 1</h5>
+          <small>1 day ago</small>
+        </div>
+        <p class="mb-1">Italian, Pizza</p>
+        <small>Price: $$</small>
+      </a>
+
+      <!-- Listing 2 -->
+      <a
+        href="#"
+        class="list-group-item list-group-item-action list-group-item-light"
+      >
+        <div class="d-flex w-100 justify-content-between">
+          <h5 class="mb-1">Restaurant 2</h5>
+          <small class="text-body-secondary">2 days ago</small>
+        </div>
+        <p class="mb-1">Chinese, Asian</p>
+        <small class="text-body-secondary">Price: $</small>
+      </a>
+
+      <!-- Listing 3 -->
+      <a
+        href="#"
+        class="list-group-item list-group-item-action list-group-item-success"
+      >
+        <div class="d-flex w-100 justify-content-between">
+          <h5 class="mb-1">Restaurant 3</h5>
+          <small class="text-body-secondary">3 days ago</small>
+        </div>
+        <p class="mb-1">Japanese, Sushi, Asian</p>
+        <small class="text-body-secondary">Price: $$$</small>
+      </a>
+
+      <!-- Listing 4 -->
+      <a
+        href="#"
+        class="list-group-item list-group-item-action list-group-item-light"
+      >
+        <div class="d-flex w-100 justify-content-between">
+          <h5 class="mb-1">Restaurant 4</h5>
+          <small class="text-body-secondary">3 days ago</small>
+        </div>
+        <p class="mb-1">Greek, Vegetarian</p>
+        <small class="text-body-secondary">Price: $$</small>
+      </a>
+
+      <!-- Listing 5 -->
+      <a
+        href="#"
+        class="list-group-item list-group-item-action list-group-item-success"
+      >
+        <div class="d-flex w-100 justify-content-between">
+          <h5 class="mb-1">Restaurant 5</h5>
+          <small class="text-body-secondary">3 days ago</small>
+        </div>
+        <p class="mb-1">American, Steakhouse, Bar</p>
+        <small class="text-body-secondary">Price: $$</small>
+      </a>
+    </div>
   </body>
 </html>
